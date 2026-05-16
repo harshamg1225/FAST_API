@@ -26,7 +26,9 @@ Patient_detail = {"name": "Harsha", "age": 34, "gender": "Male", "address": addr
 patient_info = Patient(**Patient_detail)
 
 
-temp = patient_info.model_dump(include=["name", "age"])
+temp = patient_info.model_dump(
+    include=["name", "age"],
+)
 print(temp, type(temp))
 
 temp_json = patient_info.model_dump_json(exclude=["name", "age"])
