@@ -22,7 +22,7 @@ class Patient(BaseModel):
 
 patient_info = {
     "name": "Harsha",
-    "age": "30",
+    "age": "",
     "weight": 34,
     "married": True,
     "allegies": ["pollen", "dust"],
