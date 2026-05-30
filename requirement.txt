@@ -2,3 +2,11 @@ fastapi
 uvicorn
 sqlalchemy
 sqlalchemy[asyncio]
+numpy 
+pandas
+scikit-learn
+tensorflow
+python-multipart
+authlib 
+passlib[bcrypt]
+pydantic-settings
