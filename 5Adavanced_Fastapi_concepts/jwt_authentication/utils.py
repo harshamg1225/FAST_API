@@ -5,7 +5,7 @@ pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 
 fake_user_db = {
-    "johndoe": {"username": "johndoe", "hashed_passowrd": pwd_context.hash("secret123")}
+    "johndoe": {"username": "johndoe", "hashed_password": pwd_context.hash("secret123")}
 }
 
 
@@ -15,6 +15,6 @@ def get_user(username: str):
     return user
 
 
-def verify_passowrd(plain_password, hashed_password):
+def verify_passoword(plain_password, hashed_password):
 
-    return pwd_context.verify(plain_passoword, hashed_password)
+    return pwd_context.verify(plain_password, hashed_password)

@@ -12,3 +12,6 @@ passlib[bcrypt]
 pydantic-settings
 pytest
 httpx
+redis[async]
+snakeviz
+line-profiler

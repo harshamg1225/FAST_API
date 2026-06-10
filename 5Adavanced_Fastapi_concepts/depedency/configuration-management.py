@@ -18,4 +18,4 @@ def get_settings():
 @app.get("/config")
 def get_config(setting: Settings = Depends(get_settings)):
 
-    return {"configuration": setting.api_key}
+    return {"api-key": setting.api_key}
