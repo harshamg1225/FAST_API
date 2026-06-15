@@ -15,3 +15,5 @@ httpx
 redis[async]
 snakeviz
 line-profiler
+locust
+prometheus-fastapi-instrumentator

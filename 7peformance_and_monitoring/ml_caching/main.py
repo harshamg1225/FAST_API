@@ -19,7 +19,7 @@ async def predict(data: IrisFlower):
 
     if cached_result:
         print("Serving prediction from cache")
-
+ 
         return json.loads(cached_result)
 
     prediction = Model.predict([data.to_list()])[0]
